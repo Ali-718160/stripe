@@ -11,7 +11,7 @@ app.post("/create-payment-intent", async (req, res) => {
     currency: "gbp"
   });
 
-  res.send({
+  res.json({
     clientSecret: paymentIntent.client_secret
   });
 });
